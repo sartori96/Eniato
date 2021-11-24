@@ -7,3 +7,4 @@ git pull             - baixa as diferenças
 git branch NOME      - cria o  "galho"
 git switch NOME      - troca de galho
 git origin add URL   - define a origem
+
