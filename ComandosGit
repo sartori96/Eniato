@@ -3,8 +3,7 @@ git add Makefile     - só pra add um
 git add .            - vê o projeto todo procurando mudanças
 git commit -m"com"   - faz o commit 
 git push origin NOME - faz o upload
-git pull             - baixa as diferenças
+git pull origin NOME - baixa as diferenças
 git branch NOME      - cria o  "galho"
 git switch NOME      - troca de galho
 git origin add URL   - define a origem
-
