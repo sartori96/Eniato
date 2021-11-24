@@ -9,4 +9,4 @@ run:
 	export FLASK_APP=mySite/app.py && \
 	flask run
 
-all: activate install run 
+all: activate install run
