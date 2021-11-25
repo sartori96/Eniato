@@ -4,6 +4,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def raiz():
-    return 'Olá Mundo!'
+    return '<h1>{}</h1>'.format('はは')
 
 app.run()

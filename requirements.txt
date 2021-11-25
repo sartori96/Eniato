@@ -2,3 +2,5 @@ flask
 numpy==1.18.1
 pandas
 jsonlib
+beautifulsoup4
+requests2
