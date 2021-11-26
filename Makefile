@@ -6,7 +6,7 @@ install:
 
 run:
 	export FLASK_ENV=development && \
-	export FLASK_APP=mySite/app.py && \
+	export FLASK_APP=dependencias/app.py && \
 	flask run
 
 all: activate install run
