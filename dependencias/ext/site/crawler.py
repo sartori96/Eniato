@@ -10,4 +10,12 @@ for tr in mostra.select('tr'):
     lista.update({tr.find('a'): tr.find('td', attrs={'class':'money'})})
     
 print(lista)
-    
+
+
+#alt
+#lista =[]
+#for tr in mostra.select('tr'):
+#    lista.append(tr.text.strip())
+
+#lista.pop(0)
+#print(lista)
