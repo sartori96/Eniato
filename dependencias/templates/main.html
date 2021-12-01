@@ -1,4 +1,9 @@
 <div>
     <h1>Eniato</h1>
     <h2>Forma de ficar rico</h2>
+    {% if variavel %}
+    {% for i in variavel %}
+    <li>{{i}}</li>
+    {%endfor%}
+    {%endif%}
 </div>

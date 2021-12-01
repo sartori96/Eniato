@@ -1,21 +1,37 @@
 import requests
 from bs4 import BeautifulSoup
+import numpy as np
 
-soup = BeautifulSoup(requests.get("https://pc.saiteichingin.info/table/page_list_nationallist.php").content, 'html.parser')
+def crawler():
 
-mostra = soup.find('div', attrs={'class': 'industryTableArea_list'})
+    soup = BeautifulSoup(requests.get("https://pc.saiteichingin.info/table/page_list_nationallist.php").content, 'html.parser')
 
-lista ={}
-for tr in mostra.select('tr'):
-    lista.update({tr.find('a'): tr.find('td', attrs={'class':'money'})})
-    
-print(lista)
+    mostra = soup.find('div', attrs={'class': 'industryTableArea_list'})
+
+    #lista ={}
+    #for tr in mostra.select('tr'):
+    #    lista.update({tr.find('a'): tr.find('td', attrs={'class':'money'})})
+    #    
+    #
 
 
-#alt
-#lista =[]
-#for tr in mostra.select('tr'):
-#    lista.append(tr.text.strip())
+    lista =[]
+    for tr in mostra.select('td', attrs={'a'}):
+        lista.append(tr.text.strip())
 
-#lista.pop(0)
-#print(lista)
+
+
+
+
+    #alt
+    #lista =[]
+    #for tr in mostra.select('tr'):
+    #    lista.append(tr.text.strip())
+
+    #lista.pop(0)
+    #print(lista)
+
+    #for x in lista:
+    #    print (x)
+    print(lista)
+    return lista

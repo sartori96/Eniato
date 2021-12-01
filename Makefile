@@ -1,5 +1,6 @@
 activate:
-	source enitato/Scripts/activate
+	python -m venv eniato; \
+	source eniato/Scripts/activate; \
 
 install:
 	pip install -e .['dev']
