@@ -1,0 +1,7 @@
+saiteichingin:
+table
+.cont_r                         - Retorna a parte da tabela do site
+.list                           - Retorna o nome das regiões
+.industryTableArea_list a       - Retorna o nome das Prefeitura
+.money                          - Retorna o Salario minimo
+.date                           - Retorna a data de atualização
